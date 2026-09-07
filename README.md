@@ -413,23 +413,38 @@ TutorCRM/
 
 ---
 
-# 🗃️ Database Design
+## 🗃️ Database Design
 
-TutorCRM uses a structured database architecture to manage relationships between users, students, tutors, courses, attendance, payments, examinations and other platform entities.
+TutorCRM uses a structured database architecture to manage relationships between users, students, tutors, courses, attendance, payments, examinations, quizzes, and other platform entities.
 
 <div align="center">
 
 ### 📐 Entity Relationship Diagram
 
-## 🗃️ Database Design
+<img 
+  src="./assets/er_diagram.png" 
+  alt="TutorCRM Entity Relationship Diagram" 
+  width="100%"
+/>
 
-TutorCRM uses a structured database architecture to manage relationships between users, students, tutors, courses, attendance, payments, examinations and other platform entities.
-
-### 📐 Entity Relationship Diagram
-
-![TutorCRM ER Diagram](./assets/er_diagram.png)
 </div>
 
+### 🔗 Main Relationships
+
+| Entity | Relationship | Description |
+|---|---|---|
+| 👤 **User → Student Profile** | 1 : 0..1 | Extends user information for students |
+| 👤 **User → Tutor Profile** | 1 : 0..1 | Extends user information for tutors |
+| 👨‍🏫 **User → Course** | 1 : N | Tutor can teach multiple courses |
+| 🎓 **User → Exam Result** | 1 : N | Student can have multiple exam results |
+| 🎓 **User → Bill** | 1 : N | Student can have multiple fee records |
+| 👨‍🏫 **User → Quiz** | 1 : N | Tutor can create multiple quizzes |
+| 📝 **Quiz → Quiz Submission** | 1 : N | A quiz can have multiple student submissions |
+| 🎓 **User → Attendance** | 1 : N | Student can have multiple attendance records |
+| 👤 **User → Message** | 1 : N | Users can send and receive messages |
+| 👤 **User → Feedback** | 1 : N | Students/parents can submit feedback |
+
+</div>
 ---
 
 # 📂 Project Structure
