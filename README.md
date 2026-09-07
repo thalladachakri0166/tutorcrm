@@ -422,7 +422,7 @@ TutorCRM uses a structured database architecture to manage relationships between
 ### 📐 Entity Relationship Diagram
 
 <img 
-  src="./assets/er_diagram.png" 
+  src="./Frontend/assets/er_diagram.png" 
   alt="TutorCRM Entity Relationship Diagram" 
   width="100%"
 />
@@ -441,10 +441,8 @@ TutorCRM uses a structured database architecture to manage relationships between
 | 👨‍🏫 **User → Quiz** | 1 : N | Tutor can create multiple quizzes |
 | 📝 **Quiz → Quiz Submission** | 1 : N | A quiz can have multiple student submissions |
 | 🎓 **User → Attendance** | 1 : N | Student can have multiple attendance records |
-| 👤 **User → Message** | 1 : N | Users can send and receive messages |
-| 👤 **User → Feedback** | 1 : N | Students/parents can submit feedback |
-
-</div>
+| 💬 **User → Message** | 1 : N | Users can send and receive messages |
+| ⭐ **User → Feedback** | 1 : N | Students/parents can submit feedback |
 ---
 
 # 📂 Project Structure
