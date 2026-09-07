@@ -421,12 +421,13 @@ TutorCRM uses a structured database architecture to manage relationships between
 
 ### 📐 Entity Relationship Diagram
 
-<a href="https://github.com/thalladachakri0166/tutorcrm/blob/main/assets/er_diagram.png">
+## 🗃️ Database Design
 
-<img src="https://github.com/thalladachakri0166/tutorcrm/raw/main/assets/er_diagram.png" width="850" alt="TutorCRM ER Diagram"/>
+TutorCRM uses a structured database architecture to manage relationships between users, students, tutors, courses, attendance, payments, examinations and other platform entities.
 
-</a>
+### 📐 Entity Relationship Diagram
 
+![TutorCRM ER Diagram](./assets/er_diagram.png)
 </div>
 
 ---
